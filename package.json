@@ -10,13 +10,19 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "./node_modules/.bin/mocha --reporter spec",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
+    "enzyme": "^3.3.0",
+    "expect": "^23.1.0",
+    "express": "^4.16.3",
+    "jsdom": "^11.11.0",
     "mocha": "^5.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "request": "^2.87.0",
     "sinon": "^6.0.0"
   }
 }
